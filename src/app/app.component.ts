@@ -14,11 +14,29 @@ import { AffichageDateComponent } from './components/affichage-date/affichage-da
 import { DynamiqueDateComponent } from './components/dynamique-date/dynamique-date.component';
 import { ComposantParentComponent } from './components/composant-parent/composant-parent.component';
 import { ComposantEnfantComponent } from './components/composant-enfant/composant-enfant.component';
+import { AffichageListeComponent } from './components/affichage-liste/affichage-liste.component';
+import { MenuListeComponent } from './components/menu-liste/menu-liste.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FirsComponentComponent, ListeComponent, UserComponent, AlertButtonComponent, MagieComponent, ListeFiltreComponent, ShowDateComponent, UserCardComponent, GenericAlertButtonComponent, ButtonMenuComponent, AffichageDateComponent, DynamiqueDateComponent, ComposantParentComponent, ComposantEnfantComponent],
+  imports: [RouterOutlet,
+    FirsComponentComponent,
+    ListeComponent,
+    UserComponent,
+    AlertButtonComponent,
+    MagieComponent,
+    ListeFiltreComponent,
+    ShowDateComponent,
+    UserCardComponent,
+    GenericAlertButtonComponent,
+    ButtonMenuComponent,
+    AffichageDateComponent,
+    DynamiqueDateComponent,
+    ComposantParentComponent,
+    ComposantEnfantComponent,
+    AffichageListeComponent,
+    MenuListeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
