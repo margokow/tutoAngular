@@ -1,23 +1,19 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from '../../Models/user.model';
 
 @Component({
   selector: 'app-affichage-liste',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './affichage-liste.component.html',
-  styleUrl: './affichage-liste.component.css'
+  styleUrls: ['./affichage-liste.component.css']
 })
 export class AffichageListeComponent {
-  @Input()
-  isVisible?: boolean
+  @Input() users: User[] = [];
+  @Output() deleteUser = new EventEmitter<number>();
 
-  @Output()
-  delete: EventEmitter<boolean> = new EventEmitter()
-
-  onClick() {
-    this.isVisible = !this.isVisible;
-    this.delete.emit(this.isVisible);
-
-    console.log(this.isVisible);
+  delete(userId: number) {
+    this.deleteUser.emit(userId);
   }
 }

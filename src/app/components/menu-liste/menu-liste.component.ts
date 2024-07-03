@@ -7,14 +7,14 @@ import { AffichageListeComponent } from '../affichage-liste/affichage-liste.comp
 @Component({
   selector: 'app-menu-liste',
   standalone: true,
-  imports: [FormsModule, AffichageListeComponent],
+  imports: [CommonModule, FormsModule, AffichageListeComponent],
   templateUrl: './menu-liste.component.html',
-  styleUrl: './menu-liste.component.css'
+  styleUrls: ['./menu-liste.component.css']
 })
 export class MenuListeComponent {
   search: string = "";
 
-  users : User[] = [
+  users: User[] = [
     { id: 1, nom: "foo", prenom: "bar", age: 18, isVisible: true },
     { id: 2, nom: "smith", prenom: "jane", age: 22, isVisible: true },
     { id: 3, nom: "john", prenom: "doe", age: 18, isVisible: true },
@@ -24,11 +24,12 @@ export class MenuListeComponent {
     { id: 7, nom: "jones", prenom: "quincy", age: 34, isVisible: true },
     { id: 8, nom: "johnson", prenom: "emily", age: 21, isVisible: true },
     { id: 9, nom: "martin", prenom: "luther", age: 40, isVisible: true }
-]
+  ];
 
-isVisible =
-
-delete(event: boolean) {
-  this.isVisible = event
-}
+  delete(userId: number) {
+    const user = this.users.find(u => u.id === userId);
+    if (user) {
+      user.isVisible = false;
+    }
+  }
 }

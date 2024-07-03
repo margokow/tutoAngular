@@ -1,19 +1,9 @@
-<form action="">
-  <input type="text" name="searchLabel" placeholder="Rechercher" [(ngModel)] = "search">
+<form>
+  <input type="text" name="searchLabel" placeholder="Rechercher" [(ngModel)]="search">
 </form>
 
-@for (user of users; track $index) {
-    <div>
-      <p>{{user.id}}</p>
-      <p>{{user.nom}}</p>
-      <p>{{user.prenom}}</p>
-      <p>{{user.age}}</p>
-    </div>
-    <app-affichage-liste></app-affichage-liste>
-    <hr>
-  }
-@empty {
-<p>C'est vide.</p>
-}
+<app-affichage-liste
+  [users]="users"
+  (deleteUser)="delete($event)">
+</app-affichage-liste>
 
-<app-affichage-liste [isVisible]=true (delete)="delete($event)"></app-affichage-liste>
