@@ -10,11 +10,15 @@ import { ShowDateComponent } from './components/show-date/show-date.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
 import { GenericAlertButtonComponent } from './components/generic-alert-button/generic-alert-button.component';
 import { ButtonMenuComponent } from './components/button-menu/button-menu.component';
+import { AffichageDateComponent } from './components/affichage-date/affichage-date.component';
+import { DynamiqueDateComponent } from './components/dynamique-date/dynamique-date.component';
+import { ComposantParentComponent } from './components/composant-parent/composant-parent.component';
+import { ComposantEnfantComponent } from './components/composant-enfant/composant-enfant.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FirsComponentComponent, ListeComponent, UserComponent, AlertButtonComponent, MagieComponent, ListeFiltreComponent, ShowDateComponent, UserCardComponent, GenericAlertButtonComponent, ButtonMenuComponent],
+  imports: [RouterOutlet, FirsComponentComponent, ListeComponent, UserComponent, AlertButtonComponent, MagieComponent, ListeFiltreComponent, ShowDateComponent, UserCardComponent, GenericAlertButtonComponent, ButtonMenuComponent, AffichageDateComponent, DynamiqueDateComponent, ComposantParentComponent, ComposantEnfantComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

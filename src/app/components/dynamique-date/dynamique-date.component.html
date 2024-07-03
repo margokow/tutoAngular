@@ -1,0 +1,9 @@
+
+@for (city of cities; track $index) {
+  @if (city.time == "EDT") {
+    <p>On est le {{today | date: " dd MMMM yy" :"EDT"}} à {{today | date: " hh:mm:ss" :"EDT"}}  à {{city.name}} </p>
+
+  } @else {
+    <p>On est le {{today | date: " dd MMMM yy" :"CEST"}} à {{today | date: " hh:mm:ss" :"CEST"}}  à {{city.name}} </p>
+  }
+}
