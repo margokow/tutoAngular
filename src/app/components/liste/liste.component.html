@@ -1,0 +1,7 @@
+<h2>Deuxième composant - liste</h2>
+
+@for (element of items; track $index) {
+    <p>{{element}} - {{$index}}</p>
+}@empty {
+  <p>C'est vide</p>
+}

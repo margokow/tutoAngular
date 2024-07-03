@@ -1,0 +1,10 @@
+<h2>Composant Liste filtre</h2>
+
+@for (item of items; track $index) {
+
+    @if (item.includes('a')) {
+      <p>{{item}}</p>
+    }<!--  @else {
+      <p>Pas de "a" dans le nom</p>
+    } -->
+}

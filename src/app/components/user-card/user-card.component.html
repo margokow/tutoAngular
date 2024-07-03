@@ -1,0 +1,17 @@
+<h2>Composant User Card du TP</h2>
+
+@for (user of users; track $index; let isOdd = $odd) {
+
+    @if(isOdd) {
+      <div>
+        <p>{{user.id}}</p>
+        <p>{{user.name}}</p>
+        <p>{{user.email}}</p>
+        <p>{{user.company.name}}</p>
+      </div>
+      <hr>
+    }
+}@empty {
+  <p>C'est vide.</p>
+}
+
