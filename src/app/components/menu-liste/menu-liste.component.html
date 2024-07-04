@@ -1,9 +1,0 @@
-<form>
-  <input type="text" name="searchLabel" placeholder="Rechercher" [(ngModel)]="search">
-</form>
-
-<app-affichage-liste
-  [users]="users"
-  (deleteUser)="delete($event)">
-</app-affichage-liste>
-

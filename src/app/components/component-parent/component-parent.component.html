@@ -1,0 +1,7 @@
+@if(visible){
+    <p>Je suis visible</p>
+
+}@else {
+    <p>Je ne suis plus visible</p>
+}
+<app-component-enfant [visible]="visible" (changeValue)="changeVisible($event)" ></app-component-enfant>

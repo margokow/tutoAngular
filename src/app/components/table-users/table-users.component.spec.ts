@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AffichageListeComponent } from './affichage-liste.component';
+import { TableUsersComponent } from './table-users.component';
 
-describe('AffichageListeComponent', () => {
-  let component: AffichageListeComponent;
-  let fixture: ComponentFixture<AffichageListeComponent>;
+describe('TableUsersComponent', () => {
+  let component: TableUsersComponent;
+  let fixture: ComponentFixture<TableUsersComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AffichageListeComponent]
+      imports: [TableUsersComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AffichageListeComponent);
+    fixture = TestBed.createComponent(TableUsersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

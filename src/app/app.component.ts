@@ -12,10 +12,9 @@ import { GenericAlertButtonComponent } from './components/generic-alert-button/g
 import { ButtonMenuComponent } from './components/button-menu/button-menu.component';
 import { AffichageDateComponent } from './components/affichage-date/affichage-date.component';
 import { DynamiqueDateComponent } from './components/dynamique-date/dynamique-date.component';
-import { ComposantParentComponent } from './components/composant-parent/composant-parent.component';
-import { ComposantEnfantComponent } from './components/composant-enfant/composant-enfant.component';
-import { AffichageListeComponent } from './components/affichage-liste/affichage-liste.component';
-import { MenuListeComponent } from './components/menu-liste/menu-liste.component';
+import { ComponentEnfantComponent } from './components/component-enfant/component-enfant.component';
+import { ComponentParentComponent } from './components/component-parent/component-parent.component';
+import { ButtonDeleteComponent } from './components/button-delete/button-delete.component';
 
 @Component({
   selector: 'app-root',
@@ -33,10 +32,11 @@ import { MenuListeComponent } from './components/menu-liste/menu-liste.component
     ButtonMenuComponent,
     AffichageDateComponent,
     DynamiqueDateComponent,
-    ComposantParentComponent,
-    ComposantEnfantComponent,
-    AffichageListeComponent,
-    MenuListeComponent],
+    ComponentEnfantComponent,
+    ComponentParentComponent,
+    ButtonMenuComponent,
+    ButtonDeleteComponent,
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

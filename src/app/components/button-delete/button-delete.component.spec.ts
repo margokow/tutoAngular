@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuListeComponent } from './menu-liste.component';
+import { ButtonDeleteComponent } from './button-delete.component';
 
-describe('MenuListeComponent', () => {
-  let component: MenuListeComponent;
-  let fixture: ComponentFixture<MenuListeComponent>;
+describe('ButtonDeleteComponent', () => {
+  let component: ButtonDeleteComponent;
+  let fixture: ComponentFixture<ButtonDeleteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MenuListeComponent]
+      imports: [ButtonDeleteComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MenuListeComponent);
+    fixture = TestBed.createComponent(ButtonDeleteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
